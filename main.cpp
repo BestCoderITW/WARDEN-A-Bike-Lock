@@ -111,7 +111,6 @@ void setup(void)
   pinMode(3, INPUT_PULLUP);
   digitalWrite(2,LOW);
   while (digitalRead(2) == LOW) {
-    delay(10000);
     AlarmON();
   }
   if (digitalRead(2) == HIGH){
